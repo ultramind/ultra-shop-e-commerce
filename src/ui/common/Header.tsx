@@ -19,6 +19,7 @@ import ProductCard from "../ProductCard";
 import { store } from "../../lib/store";
 import {products as productData} from "../../../constants/data.mjs"
 import {categories as categoriesData} from "../../../constants/data.mjs"
+import avatarIcon from "../../assets/avatar.png"
 
 const bottomNavigation = [
   { title: "Home", link: "/" },
@@ -111,7 +112,7 @@ const Header = () => {
           <Link to={"/profile"}>
             {currentUser ? (
               <img
-                src={currentUser?.avatar}
+                src={currentUser.avatar !== null ? currentUser?.avatar : avatarIcon}
                 alt="profileImg"
                 className="w-10 h-10 rounded-full object-cover"
               />

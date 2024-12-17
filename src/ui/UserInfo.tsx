@@ -2,6 +2,7 @@ import toast from "react-hot-toast";
 import { UserTypes } from "../../type";
 import { auth } from "../lib/firebase";
 import Container from "./Container";
+import avatar from "../assets/avatar.png"
 
 const UserInfo = ({ currentUser }: UserTypes) => {
   console.log(currentUser);
@@ -14,7 +15,7 @@ const UserInfo = ({ currentUser }: UserTypes) => {
             src={
               currentUser?.avatar
                 ? currentUser?.avatar
-                : "https://i.ibb.co/mJRkRRV/png-clipart-profile-logo-computer-icons-user-user-blue-heroes-thumbnail.png"
+                : avatar
             }
             alt="userImage"
             className="w-40 h-40 rounded-full border border-gray-700 object-cover p-1"
