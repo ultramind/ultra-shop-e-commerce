@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "./Container";
 import Title from "./Title";
-import { config } from "../../config";
-import { getData } from "../lib";
 import { BlogProps } from "../../type";
 import {blogsData as blogPosts} from "../../constants/data.mjs"
 

@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { config } from "../../config";
-import { getData } from "../lib";
+import { useEffect, useState } from "react";
 import { RotatingLines } from "react-loader-spinner";
 import { CategoryProps } from "../../type";
 import { Link } from "react-router-dom";

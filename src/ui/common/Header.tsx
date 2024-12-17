@@ -12,8 +12,6 @@ import { IoClose, IoSearchOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { logo } from "../../assets";
 import Container from "../Container";
-import { config } from "../../../config";
-import { getData } from "../../lib";
 import { CategoryProps, ProductProps } from "../../../type";
 import ProductCard from "../ProductCard";
 import { store } from "../../lib/store";
